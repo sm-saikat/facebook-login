@@ -13,7 +13,9 @@ app.listen(process.env.PORT || 8080, ()=>{
 })
 
 app.get('/', (req, res)=>{
-    res.render('index')
+    res.json({
+        message: 'all ok'
+    })
 })
 
 app.post('/login', (req, res)=>{
